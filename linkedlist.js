@@ -17,3 +17,15 @@ const node = new Node(element);
 node.next = this.head;
 this.head = node;
 }
+traverse(){
+let current = this.head;
+let output = "";
+
+while(current){
+output += current.value + " ";
+current = current.next;
+}
+
+return output;
+}
+}
